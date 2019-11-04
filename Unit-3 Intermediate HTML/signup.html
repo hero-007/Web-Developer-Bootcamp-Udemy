@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp Page</title>
+    </head>
+    <body>
+        <h1>SignUp Form</h1>
+        <form action="#" method="get">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" required><br>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required><br>
+
+            <!-- Grouping radio buttons together -->
+            <label for="male">Male</label>
+            <input type="radio"  id="male" name="gender" value="male">
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="others">Others</label>
+            <input type="radio" id="others" name="gender" value="others">
+
+
+            <!-- Using select to create dropdown -->
+            <br>
+            <select name="country">
+                <option value="none">-- select your country --</option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="usa">USA</option>
+            </select>
+            <br>
+            <textarea name="about" cols="30" rows="10" placeholder="Tell us about yourself"></textarea>
+            <br>
+            <button>GO!</button>
+        </form>
+    </body>
+</html>
