@@ -1,0 +1,24 @@
+/* h1 is a type of selector that we use in css */
+h1{
+    color:rgba(10,255,120,0.5);
+    /* rgba - red channel, green channel, blue channel, alpha channel */
+}
+
+h4{
+    color: blue;
+    background: rgb(255,120,120);
+}
+
+li{
+    color:green;
+    border-color: black;
+    border-width: 2px;
+    border-style: dotted;
+}
+
+body{
+    background: url(https://picjumbo.com/wp-content/uploads/ink-in-water-abstract-free-photo-2210x1473.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border: 5px red solid;
+}

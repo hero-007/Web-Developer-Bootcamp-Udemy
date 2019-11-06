@@ -1,0 +1,13 @@
+body{
+    background: orange;
+}
+
+#special{
+    /* special is an id */
+    background: yellow;
+}
+
+.completed{
+    /* completed is a class */
+    text-decoration: line-through;
+}

@@ -1,0 +1,28 @@
+/* star selector - allows you to select all the elements in the html page */
+* {
+    border: 1px solid lightblue;
+}
+
+/* Descendant selector - allows you to select that are children of some other element */
+li a{
+    /* li .hello */
+    color: #ff2233;
+}
+
+/* Adjacent Selector - allows you to select elements that are on the same level wrt the mentioned element*/
+h4 + ul {
+    /* all the ul that are at same level as h4 */
+    border: 2px red solid;
+}
+
+/* Attribute selector -  select element based on the value of the attribute*/
+a[href="http://www.google.com"]{
+    /* this will select all the a tag where href is equal to 'google.com' */
+    color: purple;
+}
+
+
+/* :nth-of-type selector - this allows you to select nth of a particular type of element in the html page */
+ul:nth-of-type(3){
+    background: lightblue;
+}
