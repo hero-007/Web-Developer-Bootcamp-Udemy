@@ -1,0 +1,25 @@
+img{
+    width:29%;
+    margin:1.5%;
+    border: 1px solid lightgray;
+    padding:5px;
+}
+
+h1{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+p{
+    width:96%;
+    height:40px;
+    margin:auto;
+    text-align: center;
+    background: lightgray;
+    color: black;
+    padding-top:15px;
+}

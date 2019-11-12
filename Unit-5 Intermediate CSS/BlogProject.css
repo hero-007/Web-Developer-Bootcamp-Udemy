@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+body{
+    max-width: 700px;
+    width:80%;
+    margin: 15px auto;
+    border:20px solid #bdc3c7;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px;
+}
+
+.date{
+    color: #3498db;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+
+.heading{
+    color:#2c3e50;
+    font-weight: 800;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.highlight{
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+}
+
+hr{
+    border: 0.5px solid rgb(216, 215, 215);
+}

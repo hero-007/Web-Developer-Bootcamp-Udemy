@@ -1,0 +1,28 @@
+/* In box model there are 4 main properties :  */
+
+div{
+    background: lightgrey;
+    color:black;
+
+}
+
+/* 1 - Content */
+.box{
+    /* width and height are 2 main properties for content in the box model */
+    width:50%;
+}
+
+/* 2 - Padding */
+.box{
+    padding: 20px;
+}
+
+/* 3 - Border */
+.box{
+    border-left: 2px red solid;
+}
+
+/* 4 - Margin */
+.box{
+    margin:40px auto;
+}

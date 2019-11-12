@@ -1,0 +1,36 @@
+/* Important Text and Font related property in CSS */
+
+/* 1 - font-family */
+h1{
+    font-family: 'Indie Flower', cursive;
+}
+
+/* 2 - font-size */
+p{
+    font-family: 'Supermercado One', cursive;
+    font-size: 20px;
+}
+
+#highlight{
+    font-size:2em;
+}
+
+/* 3 - font-weight */
+.super{
+    font-weight: bold;
+}
+
+/* 4 - line height */
+.duper{
+    line-height: 1.5;
+}
+
+/* 5 - text-align */
+h1{
+    text-align: center;
+}
+
+/* 6 - text-decoration */
+h1{
+    text-decoration: underline;
+}
