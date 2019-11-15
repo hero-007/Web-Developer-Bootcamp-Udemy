@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Bar Component Bootstrap</title>
+        <link rel="stylesheet" href="bootstrap.css" type="text/css">
+
+        <style>
+            .navbar{
+                background: #29303b;
+            }
+
+            .navbar-default .navbar-nav > li > a{
+                color:white;
+            } 
+
+            .navbar{
+                border: 0px;
+                border-radius: 0px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!-- Simple Navigation Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Branding -->
+                <div class="navbar-header">
+
+                    <!-- Adding the hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-demo" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Above code adds the hamburger -->
+
+                    <a href="#">
+                        <img src="img/instagram.png" alt="" class="navbar-brand">
+                    </a>
+                </div>
+
+                <!-- This div will collapse the links when we hit mobile size -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-demo">    
+                <!-- Add Some other links to the left side of the branding -->
+                    <div class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </div>
+
+                    <!-- Add Some other links to the right side of the navigation bar -->
+                    <div class="nav navbar-nav navbar-right">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">SignUp</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Simple Navigation Bar Ends Here -->
+
+
+
+            <!-- Adding Bootstrap javascript here and jquery via cdn-->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" type="text/javascript"></script>
+            <script src="bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>
