@@ -1,0 +1,97 @@
+html{
+    height:100%;
+}
+
+body{
+    padding:60px;
+    background:url(https://images.unsplash.com/uploads/1413259835094dcdeb9d3/6e609595?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar-default{
+    color:black;
+    background: #FFDF3F;
+    border-color:#FFDF3F;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #37323E;
+    font-family: 'Alatsi', sans-serif;
+    font-size: 1.1em;
+}
+
+.navbar-default .navbar-nav > li:hover {
+    background:rgb(252, 216, 40);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+.navbar-default .navbar-brand {
+    color: #37323E;
+    font-size:1.2em;
+    font-family: 'Alatsi', sans-serif;
+}
+
+#real-content{
+    /* padding-top:15%; */
+    padding:5%;
+    color:white;
+    border: 0.5px solid white;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    width:70%;
+    background: rgba(17, 17, 15, 0.4);
+}
+
+label{
+    color:white;
+    /* text-shadow: 0px 4px 3px black; */
+    font-family: 'Calistoga', cursive;
+    font-size: 28px;
+}
+#branding{
+    color:lightyellow;
+    text-align: center;
+    padding-top:8%;
+    font-size: 6rem;
+    text-shadow: 0px 4px 3px black,
+                0px 8px 23px gray;
+    font-family: 'Calistoga', cursive;
+}
+
+.but{
+    margin:auto;
+    
+}
+
+.btn-default{
+    background: #FFDF3F;
+    font-size:1.2em;
+    color:#37323E;
+    font-family: 'Alatsi', sans-serif;
+    border-color: transparent;
+}
+
+.btn-default:hover{
+    background:rgb(252, 216, 40);
+    border-color: transparent;
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.2);
+}
+
+h1{
+    padding-bottom:5px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background:rgb(252, 216, 40);
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:hover {
+    background:rgb(252, 216, 40);
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.2);
+}
