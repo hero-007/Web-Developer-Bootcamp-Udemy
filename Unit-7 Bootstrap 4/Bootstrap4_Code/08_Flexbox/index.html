@@ -16,10 +16,10 @@
 <body>
     <div class="container">
         <h1 class="text-center display-4">Flexbox</h1>
-        <div class="border border-dark d-flex flex-row justify-content-start align-items-end" style="height: 200px">
-            <button class="btn btn-info btn-lg">LARGE</button>
-            <button class="btn btn-primary">SMALL</button>
-            <button class="btn btn-warning">SMALL</button>
+        <div class="border border-dark d-flex justify-content-around align-items-stretch" style="height: 200px">
+            <div class="border border-dark d-flex align-items-end"><button class="btn btn-info btn-lg">LARGE</button></div>
+            <div class="border border-dark d-flex align-items-start"><button class="btn btn-primary">SMALL</button></div>
+            <div class="border border-dark d-flex align-items-center"><button class="btn btn-warning">SMALL</button></div>
         </div>
 
         <div class="border border-dark d-flex flex-row-reverse justify-content-start align-items-end" style="height: 200px">
@@ -40,6 +40,12 @@
             <button class="btn btn-warning">SMALL</button>
         </div>
 
+        <div class="border border-dark d-flex flex-column flex-md-row justify-content-center" style="height:300px;margin:2rem;">
+            <button class="btn btn-warning btn-lg">Hello</button>
+            <button class="btn btn-danger btn-lg">Hello</button>
+            <button class="btn btn-info btn-lg">Hello</button>
+            <button class="btn btn-success btn-lg">Hello</button>
+        </div>
         <h1 class="display-4 text-center">EXAMPLE TIME</h1>
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <button class="btn btn-dark btn-lg">Link 1</button>
