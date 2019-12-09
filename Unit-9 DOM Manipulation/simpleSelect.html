@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My title</title>
+    </head>
+    <body>
+        <h1>Hello Brother!!!!</h1>
+
+        <script>
+            var h1 = document.querySelector("h1");
+            var body = document.querySelector("body");
+            var chng = true;
+
+            setInterval(function() {
+                if(chng === true)
+                {
+                    h1.style.color = "green";
+                    body.style.background = "yellow";
+                    chng = false;
+                }
+                else
+                {
+                    h1.style.color = "white";
+                    body.style.background = "red";
+                    chng = true;
+                }
+            },2000);
+        </script>
+    </body>
+</html>

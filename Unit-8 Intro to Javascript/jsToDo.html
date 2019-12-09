@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple ToDo List</title>
+        <script>
+            // "new" - Add a todo 
+            // "list" - list all todos
+            // "delete" - delete a particular item based on its index
+            // "quit" - quit App 
+            var todo = ["list is empty"];  // empty todo list
+            while(true)
+            {
+                input = prompt("Enter your command :");
+                if(input === "new")
+                {
+                    var data = prompt("Enter task : ");
+                    if(todo[0] === "list is empty")
+                    {
+                        todo.pop();
+                    }
+                    todo.push(data);
+                }
+                else if(input === "list")
+                {
+                    var allTask = "";
+                    var i = 1;
+                    todo.forEach(function(task){
+                        allTask = allTask+i+" "+task+"\n";
+                        i++;
+                    });
+                    console.log(allTask);
+                    alert(allTask);
+                }
+                else if(input === "delete")
+                {
+                    var idx = Number(prompt("Enter the index of the element : "));
+                    idx = idx - 1;
+
+                    if(idx < todo.length)
+                    {
+                        var temp = todo[idx];
+                        todo.splice(idx,1);
+                        alert(temp + " has been removed from the list.");
+                    }
+                    else{
+                        alert("No such item exist in the todo list.")
+                    }
+                }
+                else{
+                    break;
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>ToDo List</h1>
+        <ul>
+            <li>"new" - Add a ToDo</li>
+            <li>"list" - View all ToDo</li>
+            <li>"delete" - delete a particular item from the list</li>
+            <li>"quit" - Quit App</li>
+        </ul>
+    </body>
+</html>
