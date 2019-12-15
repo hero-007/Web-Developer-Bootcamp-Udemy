@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Toggler</title>
+
+        <style>
+            div{
+                width: 80%;
+                height:300px;
+                margin:auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .dark{
+                background: seagreen;
+            }
+
+            .light{
+                background: slateblue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <button>Toggle Color!</button>
+        </div>
+
+        <script>
+            var box = document.querySelector("div");
+            var button = document.querySelector("button");
+
+            box.classList.add("dark"); // by default
+            var ctr = 0;
+
+            button.addEventListener("click",function(){
+                if(ctr === 0)
+                {
+                    // class applied is dark -> change it to light
+                    box.classList.remove("dark");
+                    box.classList.add("light");
+                    ctr = 1;
+                }
+                else
+                {
+                    // class applied is light -> change it to dark
+                    box.classList.remove("light");
+                    box.classList.add("dark");
+                    ctr = 0;
+                }
+            });
+        </script>
+    </body>
+</html>

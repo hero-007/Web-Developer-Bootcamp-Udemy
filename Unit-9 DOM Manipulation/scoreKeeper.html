@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Score Keeper
+        </title>
+
+        <style>
+            .bolded{
+                font-size: 4rem;
+                text-decoration: solid;
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+
+            .winner{
+                color: green;
+            }
+
+            .loser{
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            <span class="score1 bolded">0</span>
+            <span class="bolded">to</span>
+            <span class="score2 bolded">0</span>
+        </h1>
+
+        <h2>Playing to : <span id="final-score">5</span></h2>
+
+        <input type="number" id="max-score" placeholder="Enter the max score">
+        <button class="player1">Player 1</button>
+        <button class="player2">Player 2</button>
+        <button id="reset">Reset</button>
+
+
+        <!-- Javascript -->
+        <script>
+            var pscore1 = document.getElementsByClassName("score1")[0];
+            var pscore2 = document.getElementsByClassName("score2")[0];
+            var finalScore = document.getElementById("final-score");
+            var input = document.querySelector("#max-score");
+            var pbutton1 = document.querySelector(".player1");
+            var pbutton2 = document.querySelector(".player2");
+            var reset = document.querySelector("#reset");
+
+            function resetAll(){
+                pscore1.textContent = 0;
+                pscore2.textContent = 0;
+                pscore1.classList.remove("winner");
+                pscore1.classList.remove("loser");
+                pscore2.classList.remove("winner");
+                pscore2.classList.remove("loser");
+
+                p1 = 0;
+                p2 = 0;
+            }
+
+            var maxScore = 5; // default value of maximum score
+
+            // change max-score as input value from the user changes
+            input.addEventListener("change",function(){
+                var value = this.value;
+                finalScore.textContent = value;
+                maxScore = Number(value);
+                resetAll();
+            })
+
+            // update player 1 score with button click 
+            var p1 = 0;
+            pbutton1.addEventListener("click",function(){
+
+                if(p1 === maxScore || p2 === maxScore)
+                    return;
+
+                p1++;
+                pscore1.textContent = p1;
+
+                if(p1 === maxScore)
+                {
+                    // player 1 wins
+                    pscore1.classList.add("winner");
+                    pscore2.classList.add("loser");
+                }
+            });
+
+            // update player 2 score with button click 
+            var p2 = 0;
+            pbutton2.addEventListener("click",function(){
+
+                if(p1 === maxScore || p2 === maxScore)
+                    return;
+
+                p2++;
+                pscore2.textContent = p2;
+
+                if(p2 === maxScore)
+                {
+                    // player 2 wins
+                    pscore1.classList.add("loser");
+                    pscore2.classList.add("winner");
+                }
+            });
+
+            // reset button is clicked
+            reset.addEventListener("click",resetAll);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!-- Create a simple image slideshow using JS -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Image slideshow</title>
+        <style>
+            img{
+                width:80%;
+                height:300px;
+                text-align: center;
+            }
+
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Click the button to change the image</h1>
+        <div style="text-align: center;">
+            <img src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&auto=format&fit=crop&w=790&q=80" alt="No internet connection">
+        </div>
+
+        <button id="change">Change Image</button>
+        <script>
+            var imageList = ["https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&auto=format&fit=crop&w=790&q=80",
+            "https://images.unsplash.com/photo-1500879747858-bb1845b61beb?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+            "https://images.unsplash.com/photo-1503595855261-9418f48a991a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"];
+
+            var tag = document.getElementsByTagName("img")[0];
+            var button = document.querySelector("#change");
+
+            var curr = 1;
+
+            button.addEventListener("click",function(){
+                // This method will run when button is clicked and it'll change the picture
+                if(curr === imageList.length)
+                {
+                    curr = 0;
+                }
+                
+                tag.setAttribute("src",imageList[curr]);
+                curr++;
+            })
+        </script>
+    </body>
+</html>
