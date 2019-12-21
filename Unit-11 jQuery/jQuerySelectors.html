@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Selector</title>
+        <!-- Include jQuery Here -->
+        <script type="text/Javascript" src="./lib/jquery.js"></script>
+    </head>
+    <body>
+        <h1>Programming Langauges I know.</h1>
+
+        <input type="text" placeholder="Enter your language">
+        <ol>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Javascript</a></li>
+            <li>Python</li>
+            <li>C</li>
+        </ol>
+
+        <script>
+            $("input[type='text']").keypress(function(event){
+                if(event.which === 13)
+                {
+                    // highlight that li where text == entered language
+                    var value = $(this).val();
+                    console.log(value);
+                    var liList = $("li");
+                    console.log(liList);
+                    for(var i=0;i<liList.length;i++)
+                    {
+                        if(liList.eq(i).text() === value)
+                        {
+                            liList.eq(i).css({
+                                background: "black",
+                                color: "yellow",
+                                transition: "background color 2s"
+                            });
+
+                            break;
+                        }
+                    }
+                    $(this).val("");
+                }
+            });
+
+            var lis = $("li");
+            var first = lis[0];
+            console.log(first.text());
+        </script>
+    </body>
+</html>

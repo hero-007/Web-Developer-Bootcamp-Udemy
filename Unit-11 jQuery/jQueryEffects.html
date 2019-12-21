@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Effects</title>
+        <script type="text/Javascript" src="./lib/jquery.js"></script>
+
+        <style>
+            .box{
+                width:100px;
+                height:100px;
+                float: left;
+                margin: 20px;
+                color: white;
+                background-color: teal;
+                padding: 5px;
+                text-align: center;
+            }
+
+            .clear{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">Lorem ipsum dolor sit amet.</div class="box">
+        <div class="box">Lorem, ipsum dolor.</div>
+        <div class="box">Lorem ipsum dolor sit.</div>
+        <div class="clear"></div>
+        <button>Click Me</button>
+
+
+        <script>
+            
+            // add a fade out effects to div
+            // $("button").click(function(){
+            //     $(".box").fadeOut(3000);
+            // });
+
+            $("button").click(function(){
+                $(".box").slideToggle(2000,function()
+                {
+                    console.log("slided");
+                })
+            })
+        </script>
+    </body>
+</html>

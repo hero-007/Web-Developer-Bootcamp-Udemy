@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Exercise</title>
+        <script type="text/Javascript" src="./lib/jquery.js"></script>
+    </head>
+    <body>
+        <div>Div 1</div>
+        <div class="highlight">Div 2</div>
+        <div id="third">Div 3</div>
+        <div class="highlight">Div 4</div>
+        <a href="http://google.com" target="_blank">take me to google</a>
+        <!-- Javascript Code -->
+        <script type="text/Javascript">
+            $("div").css("backgroundColor","purple");
+            $(".highlight").css("width","200px");
+            $("#third").css("border","2px solid orange");
+            // $("div:first-of-type").css("color","pink");
+            
+            $("div").eq(0).css("color","pink");
+        </script>
+    </body>
+</html>
